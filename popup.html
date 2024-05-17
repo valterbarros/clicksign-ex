@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clicksign Utils</title>
+  <link rel="stylesheet" href="popup.css?refreshcss=3">
+</head>
+<body>
+  <div>
+    <p> Adicione o token:</p>
+    <form id="js-save-token">
+      <input id="js-token" type="text" required>
+      <button class="button-extension green" type="submit"> Salvar token </button>
+    </form>
+    
+    <hr>
+
+    <form id="js-send-document-form">
+      <p> Criação de envelope: </p>
+
+      <p>Escolha um documento para fazer upload</p>
+      <input id="js-add-document" class="add-document" type="file" multiple/>
+
+      </br>
+
+      <p>Como o signatario vai assinar?</p>
+
+      <select id="js-signature-type" class="ex-select" required>
+        <option value="handwritten" selected>Assinatura Manuscrita</option>
+        <option value="email">Email</option>
+        <option value="icp_brasil">ICP</option>
+        <option value="facial_biometrics">Biometria Facial</option>
+        <option value="liveness">Liveness</option>
+        <option value="selfie">Selfie com Documento</option>
+        <option value="documentscopy">Documentoscopia</option>
+      </select>
+      <br>
+
+      <p> Adicione o email do signatário:</p>
+      <input id="js-email" type="text" required>
+
+      <br>
+      <input type="submit" class="button-extension green send-button" value="Enviar"/>
+    </form>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

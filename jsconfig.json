@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": [
+      "ES2023",
+      "DOM"
+    ],
+    "types": ["vitest/globals", "chrome"],
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "typeAcquisition": {
+    "include": [
+      "vitest"
+    ]
+  },
+  "types": [
+    "node",
+  ],
+  "exclude": ["node_modules"],
+}

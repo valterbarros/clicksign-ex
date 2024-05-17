@@ -1,0 +1,123 @@
+.ex-select {
+  padding: 10px 16px;
+}
+
+body {
+  --ex-regular-space: 16px;
+  --ex-small-space: 12px;
+  --ex-primary-color: hsl(220 100% 50%);
+  --ex-secondary-color: #003BB3;
+  --ex-success-color: rgb(37, 131, 63);
+  --ex-success-color-secondary: rgb(35, 121, 60);
+  --ex-fail-color: rgb(255, 0, 0);
+  --ex-shadow-bottom-small: 0px 3px 2px -2px hsla(0, 0%, 9%, 0.32);
+}
+
+/* CSS */
+.button-extension {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+input[type="text"], input[type="number"] {
+  padding: 10px 16px;
+}
+
+.button-extension.blue:hover,
+.button-extension.blue:focus {
+  background-color: var(--ex-secondary-color);
+}
+
+.button-extension.green:hover,
+.button-extension.green:focus {
+  background-color: var(--ex-success-color-secondary);
+}
+
+.button-extension.red:hover,
+.button-extension.red:focus {
+  background-color: var(--ex-fail-color);
+}
+
+.button-extension:is(.green,.blue,.red):disabled {
+  background-color: #E5E5E5;
+  cursor: not-allowed;
+  color: #B3B3B3;
+}
+
+.ex-select {
+  padding: 10px 16px;
+}
+
+:is(.blue) {
+  background-color: var(--ex-primary-color);
+}
+
+:is(.green) {
+  background: var(--ex-success-color);
+}
+
+:is(.red) {
+  background: var(--ex-fail-color);
+}
+
+input[type="file"]::file-selector-button {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  background-color: var(--ex-primary-color);
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--ex-secondary-color);
+}
+
+.token-value {
+  margin-right: var(--ex-small-space);
+}
+
+.send-button {
+  margin-top: var(--ex-small-space);
+  margin-right: var(--ex-regular-space);
+}
